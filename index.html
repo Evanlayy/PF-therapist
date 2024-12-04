@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pump Therapist - Your Trading Companion</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="cyberpunk-bg"></div>
+    
+    <main>
+        <!-- Left Review -->
+        <div class="review-card left-review">
+            <div class="review-stars">
+                ★★★★★
+            </div>
+            <p class="review-text">"Dr. PumpBot helped me manage my emotions during a tough trading period. Now I make more rational decisions!"</p>
+            <div class="reviewer">
+                <span class="reviewer-name">- Alex T.</span>
+                <span class="reviewer-title">Crypto Trader</span>
+            </div>
+        </div>
+
+        <!-- Main Chat Container -->
+        <div class="chat-container">
+            <div class="therapist-profile">
+                <svg class="therapist-avatar" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Robot Head -->
+                    <rect x="40" y="40" width="120" height="120" rx="20" fill="#1a1a1a" stroke="#00ffff" stroke-width="3"/>
+                    
+                    <!-- Eyes -->
+                    <circle cx="80" cy="90" r="15" fill="#00ffff"/>
+                    <circle cx="120" cy="90" r="15" fill="#00ffff"/>
+                    <circle cx="80" cy="90" r="7" fill="#ff00ff"/>
+                    <circle cx="120" cy="90" r="7" fill="#ff00ff"/>
+                    
+                    <!-- Smile -->
+                    <path d="M70 120 Q100 140 130 120" stroke="#00ffff" stroke-width="4" fill="none"/>
+                    
+                    <!-- Antenna -->
+                    <line x1="100" y1="40" x2="100" y2="20" stroke="#00ffff" stroke-width="3"/>
+                    <circle cx="100" cy="15" r="5" fill="#ff00ff"/>
+                    
+                    <!-- Decorative circuits -->
+                    <path d="M40 70 L20 70" stroke="#ff00ff" stroke-width="2"/>
+                    <path d="M180 70 L160 70" stroke="#ff00ff" stroke-width="2"/>
+                    <circle cx="15" cy="70" r="5" fill="#00ffff"/>
+                    <circle cx="185" cy="70" r="5" fill="#00ffff"/>
+                </svg>
+                <h1>Dr. PumpBot</h1>
+                <p>Your Friendly Trading Therapist</p>
+            </div>
+
+            <div class="chat-box" id="chatBox">
+                <!-- Chat messages will appear here -->
+            </div>
+
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Tell me about your trading day...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+
+            <div class="action-buttons">
+                <a href="https://pump.fun/board" target="_blank" class="buy-now-btn">Buy Now</a>
+                <a href="https://x.com/PumpTherapistAI" target="_blank" class="social-btn twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://t.me/PumpTherapistAI" target="_blank" class="social-btn telegram">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Review -->
+        <div class="review-card right-review">
+            <div class="review-stars">
+                ★★★★★
+            </div>
+            <p class="review-text">"Finally found a therapist who understands trading psychology. My portfolio thanks you!"</p>
+            <div class="reviewer">
+                <span class="reviewer-name">- Sarah K.</span>
+                <span class="reviewer-title">Day Trader</span>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+
+    <!-- Add this before </body> -->
+    <div class="welcome-modal" id="welcomeModal">
+        <div class="modal-content">
+            <h2>Welcome to Pump Therapist! 🤖</h2>
+            <div class="modal-steps">
+                <div class="step">
+                    <h3>1. Your Trading Companion</h3>
+                    <p>I'm Dr. PumpBot, your AI therapist specialized in helping traders process their daily trading experiences.</p>
+                </div>
+                <div class="step">
+                    <h3>2. How to Use</h3>
+                    <p>Simply type about your trading day, your wins, losses, or concerns. I'm here to listen and provide supportive feedback.</p>
+                </div>
+                <div class="step">
+                    <h3>3. Features</h3>
+                    <p>• 24/7 Trading Support<br>
+                       • Emotional Analysis<br>
+                       • Trading Psychology Tips</p>
+                </div>
+            </div>
+            <button class="modal-button" onclick="closeWelcomeModal()">Let's Begin!</button>
+        </div>
+    </div>
+
+    <!-- Add this before the closing </body> tag, after the welcome modal -->
+    <div class="info-banner">
+        <div class="banner-content">
+            <i class="fas fa-sync-alt rotating"></i>
+            <span>User reviews are automatically updated every 5 minutes to show real-time trader experiences</span>
+        </div>
+    </div>
+</body>
+</html> 
